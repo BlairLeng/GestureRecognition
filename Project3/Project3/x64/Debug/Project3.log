@@ -1,0 +1,22 @@
+﻿  Source.cpp
+c:\users\pufferfish\source\repos\project3-master\project3\project3\source.cpp(117): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\pufferfish\source\repos\project3-master\project3\project3\source.cpp(118): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\pufferfish\source\repos\project3-master\project3\project3\source.cpp(119): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\pufferfish\source\repos\project3-master\project3\project3\source.cpp(120): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+  Project3.vcxproj -> C:\Users\Pufferfish\source\repos\project3-master\Project3\x64\Debug\Project3.exe
