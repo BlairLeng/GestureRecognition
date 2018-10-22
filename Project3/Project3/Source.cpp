@@ -201,7 +201,38 @@ int main()
 				Rpos = i;
 			}
 		}
-		putText(frame, std::to_string(Rpos), Point(50, 60), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 0), 4, 8);
+
+
+		String Rposs = "cant sign";
+		/*
+		switch (Rpos) {
+		case 0:
+			Rposs = "ok";
+		case 1:
+			Rposs = "palm";
+		case 2:
+			Rposs = "good";
+		case 3:
+			Rposs = "yeah";
+		default:
+			Rposs = "cant sign";
+		}
+		*/
+
+		if (Rpos == 0) {
+			Rposs = "ok";
+		}
+		if (Rpos == 1) {
+			Rposs = "palm";
+		}
+		if (Rpos == 2) {
+			Rposs = "good";
+		}
+		if (Rpos == 3) {
+			Rposs = "yeah";
+		}
+
+		putText(frame, Rposs, Point(50, 60), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 0, 0), 4, 8);
 		//pos = -1;
 		max_val_right = 0;
 		rectangle(frame, RmatchLoc, Point(RmatchLoc.x + wbtp[0].cols, RmatchLoc.y + wbtp[0].rows), Scalar(255, 0, 0), 2, 8, 0);
@@ -226,7 +257,36 @@ int main()
 			}
 
 		}
-		putText(frame, std::to_string(Lpos), Point(100, 60), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 0, 255), 4, 8);
+
+		String Lposs = "cant sign";
+		/*
+		switch (Lpos) {
+		case 0:
+			Lposs = "ok";
+		case 1:
+			Lposs = "palm";
+		case 2:
+			Lposs = "good";
+		case 3:
+			Lposs = "yeah";
+		default:
+			Lposs = "cant sign";
+		}
+		*/
+		//std::to_string(Lpos)
+		if (Lpos == 0) {
+			Lposs = "ok";
+		}
+		if (Lpos == 1) {
+			Lposs = "palm";
+		}
+		if (Lpos == 2) {
+			Lposs = "good";
+		}
+		if (Lpos == 3) {
+			Lposs = "yeah";
+		}
+		putText(frame, Lposs, Point(300, 60), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 0, 255), 4, 8);
 		max_val_left = 0;
 		rectangle(frame, LmatchLoc, Point(LmatchLoc.x + fliptp[0].cols, LmatchLoc.y + fliptp[0].rows), Scalar(0, 0, 255), 2, 8, 0);
 		//rectangle(result, matchLoc, Point(matchLoc.x + wbtp[0].cols, matchLoc.y + wbtp[0].rows), Scalar::all(0), 2, 8, 0);
